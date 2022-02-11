@@ -64,15 +64,14 @@ function App() {
   return (
     <div className="App">
     <Nav onSearch={onSearch}/>
-    <video muted loop autoPlay id="myVideo">
-    <source src={spring} type="video/mp4" />
-    </video>
     <Routes>
     <Route path="/" element= {<Cards cities={cities} onClose={onClose}/>}/>
     <Route path="/about" element={<About/>}/> 
     <Route path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
     </Routes>
-
+    <video muted loop autoPlay id="myVideo">
+    <source src={spring} type="video/mp4" />
+    </video>
     {/*<div className='slide'>
       <input type='radio' name='clima'></input>
       <input type='radio' name='clima'></input>

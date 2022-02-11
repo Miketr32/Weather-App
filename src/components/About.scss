@@ -1,0 +1,75 @@
+.central{
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+width: 100%;
+height: 100%;
+
+}
+.central h1{
+    color: white;
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+}
+
+.photo {
+    background-image: url('../img/Profile-Picture.jpg');
+    background-size:cover;
+    background-position: 0%;
+    min-width: 350px;
+    min-height: 350px;
+    border-radius: 170px;
+    border: 5px rgb(156, 156, 156) solid;
+    box-shadow: 2px 2px .5em rgb(231, 130, 130), -1px 0 .4em rgb(148, 41, 41);
+    filter: saturate(0);
+}
+
+.photo:hover {
+    filter: saturate(1);
+}
+
+.description{
+    color:white;
+    max-width: 450px;
+}
+
+.section{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+.skills{
+    color: white;
+
+
+}
+
+.css {
+    max-width: 200px;
+}
+
+.js{
+    max-width: 200px;
+}
+
+.react{
+    max-width: 200px;
+}
+.portfolio{
+    color: white;
+}
+.capture{
+    background-color: aliceblue;
+    width: 300px;
+    height: 400px;
+    margin-left: 40%;
+}

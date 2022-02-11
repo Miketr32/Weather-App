@@ -2,6 +2,7 @@
     font-weight: 450;
     margin-right: 20px;
     border-radius: 10px;
+    max-height: 90px;
 }
 
 .input-button{
