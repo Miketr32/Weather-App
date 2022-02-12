@@ -9,14 +9,14 @@ function Nav({onSearch}) {
   return (
     <nav className="general">
     <Link to='/'>
-        <span className="navbar-brand">
+        <div className="navbar-b">
           <img id="logoHenry" src={Logo} width="30" height="30" className="logo" alt="" />
           <p className='title'>Weather App</p>
-        </span>
+        </div>
     </Link>
 
     <Link to= '/about'>
-    <span className='about'>About</span>
+    <div className='about'>About</div>
     </Link>
     <div className='search'>
         <SearchBar

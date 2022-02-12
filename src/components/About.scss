@@ -10,6 +10,7 @@ background-color: #131313;
 background-size: 20px 20px;
 width: 100%;
 height: 100%;
+padding-top: 50px;
 
 }
 .central h1{
@@ -29,7 +30,7 @@ height: 100%;
     min-height: 350px;
     border-radius: 170px;
     border: 5px rgb(156, 156, 156) solid;
-    box-shadow: 2px 2px .5em rgb(231, 130, 130), -1px 0 .4em rgb(148, 41, 41);
+    box-shadow: 2px 2px .5em rgb(133, 133, 133), -1px 0 .4em rgb(214, 212, 212);
     filter: saturate(0);
 }
 
@@ -49,21 +50,35 @@ height: 100%;
 }
 .skills{
     color: white;
-
-
 }
 
+.logos {
+    display: grid;
+    grid-template-columns: 200px 150px 170px 150px;
+    margin-top: 90px;
+    animation: nuevaAnimacion 150ms ;
+}
+
+
 .css {
-    max-width: 200px;
+    max-width: 150px;
+
 }
 
 .js{
-    max-width: 200px;
+    max-width: 100px;
+    border-radius: 20px;
 }
 
 .react{
-    max-width: 200px;
+    max-width: 130px;
 }
+
+.sass{
+    max-width: 150px;
+    margin-top: -20px;
+}
+
 .portfolio{
     color: white;
 }
@@ -71,5 +86,5 @@ height: 100%;
     background-color: aliceblue;
     width: 300px;
     height: 400px;
-    margin-left: 40%;
+    margin-left: 0%;
 }

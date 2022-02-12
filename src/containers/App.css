@@ -8,16 +8,7 @@
   justify-content: center;
 }
 
-.slide{
-  position: fixed;
-  background-color: black;
-  width: 100px;
-  height: 200px;
-  right: 0%;
-  top: 50%;
-}
-
-#myVideo {
+.myVideo {
   position: fixed;
   z-index: -1;
   left: 0%;
@@ -25,12 +16,3 @@
   min-width: 100%;
   min-height: 100%;
 }
-/* 
-
-Cambiar el fondo
-
-Ver la posibilidad de agregar una barra de botones para cambiar el background
-
-
-
-*/

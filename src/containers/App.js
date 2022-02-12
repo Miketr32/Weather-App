@@ -5,7 +5,7 @@ import Ciudad from '../components/Ciudad.jsx';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
-import spring from '../img/spring.mp4'
+
 
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
@@ -69,15 +69,6 @@ function App() {
     <Route path="/about" element={<About/>}/> 
     <Route path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
     </Routes>
-    <video muted loop autoPlay id="myVideo">
-    <source src={spring} type="video/mp4" />
-    </video>
-    {/*<div className='slide'>
-      <input type='radio' name='clima'></input>
-      <input type='radio' name='clima'></input>
-      <input type='radio' name='clima'></input>
-      <input type='radio' name='clima'></input>
-    </div>*/}
     </div>
   );
 }

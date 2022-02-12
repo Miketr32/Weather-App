@@ -3,6 +3,7 @@ import './About.scss'
 import CSS from '../img/CSS & HTML.png';
 import JS from '../img/JavaScript.png';
 import react from '../img/React 2.png';
+import sass from '../img/Sass.png'
 
 export default function About(){
     return(
@@ -27,6 +28,7 @@ export default function About(){
                 <img src={CSS} alt='CSS logo' className='css'/>
                 <img src={JS} alt='JS logo' className='js'/>
                 <img src={react} alt='React logo' className='react'/>
+                <img src={sass} alt='Sass logo' className='sass' />
             </div>
         </div>
         <div className='portfolio'>

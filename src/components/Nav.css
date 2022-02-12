@@ -1,16 +1,22 @@
 .general{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(104, 103, 103, 0.5);
   min-height: 55px;
+  min-width: 100%;
 }
+
+.navbar-b{
+  display: flex;
+  align-content: center;
+  justify-items: flex-start;
+}
+
 .title{
   font-weight: bold;
-  color:white;
   padding-top:10px;
-  position: fixed;
-  margin-left: -180px;
+  color: white;
 }
 
 .logo{
@@ -22,15 +28,18 @@
 }
 
 .about {
+  background: linear-gradient(90deg, #c13eff, #ff3ec9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  filter: grayscale(80%);
+  transition: filter 200ms;
   font-weight:700;
-  font-size: 20px;
-  color: white;
+  font-size: 22px;
 }
 
-
-.navbar-brand{
-  display: flex;
-  align-items: center;
+.about:hover{
+  filter: grayscale(0%)
 }
 
 .search{
