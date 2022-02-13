@@ -5,6 +5,7 @@ import Ciudad from '../components/Ciudad.jsx';
 import './App.scss';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
+import arrow from '../img/arrow1.gif'
 
 
 
@@ -12,7 +13,11 @@ const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
 function App() {
   const [cities, setCities] = useState([]);
+  const [indicador, setIndicador] = useState(false);
 
+  function cambio() {
+    return setIndicador(true);
+  }
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
@@ -61,19 +66,44 @@ function App() {
         return null;
     }
   }
+
+  if(indicador === true){
   return (
     <div className="App">
     <Nav onSearch={onSearch}/>
-    <Routes>
-    <Route path="/" element= {<Cards cities={cities} onClose={onClose}/>}/>
-    <Route path="/about" element={<About/>}/> 
-    <Route path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
-    </Routes>
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
+    <Routes>
+    <Route exact path="/" element= {<Cards cities={cities} onClose={onClose} />}/>
+    <Route exact path="/about" element={<About/>}/> 
+    <Route exact path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
+    </Routes>
+
     </div>
   );
+  }
+  else{
+    return(
+    <div onClick={cambio}>
+    <Nav onSearch={onSearch}/>
+    <div className='indicador'>
+      <img src={arrow} alt='arrow' className='flecha'/>
+      <h3>Comencemos por aqui!</h3>
+    </div>
+    <div className="Appex">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <Routes>
+    <Route exact path="/" element= {<Cards cities={cities} onClose={onClose} />}/>
+    <Route exact path="/about" element={<About/>}/> 
+    <Route exact path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
+    </Routes>
+    </div>
+    </div>
+    )
+  }
 }
 
 export default App;

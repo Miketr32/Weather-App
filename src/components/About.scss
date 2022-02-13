@@ -1,25 +1,16 @@
 .central{
-background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 20px 20px;
-width: 100%;
-height: 100%;
-padding-top: 50px;
-
+padding-top: 25px;
 }
+
 .central h1{
     color: white;
+    font-size: 35px;
 }
+
 .profile{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 120px;
+    justify-content: center;
+    margin-top: 80px;
 }
 
 .photo {
@@ -31,7 +22,7 @@ padding-top: 50px;
     border-radius: 170px;
     border: 5px rgb(156, 156, 156) solid;
     box-shadow: 2px 2px .5em rgb(133, 133, 133), -1px 0 .4em rgb(214, 212, 212);
-    filter: saturate(0);
+    filter: saturate(0.2);
 }
 
 .photo:hover {
@@ -40,29 +31,38 @@ padding-top: 50px;
 
 .description{
     color:white;
-    max-width: 450px;
+    max-width: 430px;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+.description h2 {
+    margin-bottom: 25px;
 }
 
 .section{
     display: flex;
-    margin-top: 100px;
+    margin-top: 90px;
     justify-content: space-evenly;
 }
+
 .skills{
     color: white;
+}
+
+.skills h3 {
+    font-size: 25px;
 }
 
 .logos {
     display: grid;
     grid-template-columns: 200px 150px 170px 150px;
-    margin-top: 90px;
-    animation: nuevaAnimacion 150ms ;
+    margin-top: 70px;
 }
 
 
 .css {
     max-width: 150px;
-
 }
 
 .js{
@@ -82,9 +82,17 @@ padding-top: 50px;
 .portfolio{
     color: white;
 }
-.capture{
-    background-color: aliceblue;
-    width: 300px;
-    height: 400px;
-    margin-left: 0%;
+
+.portfolio h3 {
+    margin-top: -10px;
 }
+.capture{
+    background-image: url('../img/Portfolio-gif.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    margin-left: 0%;
+    margin-top: 10px;
+}
+

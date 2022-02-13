@@ -3,27 +3,23 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgba(104, 103, 103, 0.5);
-  min-height: 55px;
-  min-width: 100%;
+  height: 55px;
+  width: 100%;
 }
 
 .navbar-b{
   display: flex;
-  align-content: center;
-  justify-items: flex-start;
 }
 
 .title{
   font-weight: bold;
-  padding-top:10px;
+  padding-top:12px;
   color: white;
 }
 
 .logo{
   height: 50px;
   width: 80px;
-  position: fixed;
-  left: 2%;
   transform: rotate(-4deg);
 }
 
@@ -42,7 +38,4 @@
   filter: grayscale(0%)
 }
 
-.search{
-  margin-right: -170px;
-}
 

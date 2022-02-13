@@ -33,7 +33,9 @@ export default function About(){
         </div>
         <div className='portfolio'>
             <h3>Portfolio:</h3>
+            <a href='https://miportafoliodev.herokuapp.com/'>
             <div className='capture'></div>
+            </a>
         </div>
         </div>
     
