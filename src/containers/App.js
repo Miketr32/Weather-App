@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Route, Routes } from 'react-router-dom';
 import About from '../components/About.jsx';
 import Ciudad from '../components/Ciudad.jsx';
-import './App.css';
+import './App.scss';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
 
@@ -17,7 +17,7 @@ function App() {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
   function onSearch(ciudad) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&lang=es&units=metric&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&lang=es&units=metric&appid=${apiKey}`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
@@ -69,6 +69,9 @@ function App() {
     <Route path="/about" element={<About/>}/> 
     <Route path="/ciudad/:ciudadId" element={<Ciudad onFilter={onFilter}/>}/>
     </Routes>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
     </div>
   );
 }
