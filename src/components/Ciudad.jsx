@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import './Ciudad.css'
 
-export default function Ciudad({onFilter}) {
+export default function Ciudad({onFilter, onClose}) {
 
     const {ciudadId} = useParams();
 
@@ -23,6 +23,7 @@ export default function Ciudad({onFilter}) {
                     <div><img src={city.flag} alt='bandera'/></div>
                 </div>
             </div>
+            <button onClick={onClose} className="btn btn-sm btn-danger">X</button>
         </div>
     )
     } else {
